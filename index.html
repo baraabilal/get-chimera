@@ -73,19 +73,21 @@
                             
                                     .mc-field-group {
                                         margin-bottom: 20px;
-                                        display: flex !important;
+                                        display: flex;
                                         align-items: center;
+                                        flex-direction: row; /* Ensure elements are laid out in a row */
                                     }
-                            
+
                                     .mc-field-group input[type="email"] {
-                                        width: calc(100% - 140px);
+                                        flex: 1; /* Let the input field take up remaining space */
                                         padding: 10px;
                                         border: 1px solid #ffffff;
                                         border-radius: 4px;
                                         font-size: 16px;
                                         color: white;
-                                        background-color: rgba(255, 255, 255, 0.3); /* Background color with 50% opacity */
+                                        background-color: rgba(255, 255, 255, 0.3);
                                         margin-right: 10px;
+                                        width: calc(100% - 140px); /* Adjust width to leave space for button */
                                     }
                             
                                     .mc-field-group input[type="email"]::placeholder {
