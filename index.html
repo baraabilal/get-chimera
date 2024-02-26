@@ -29,15 +29,6 @@
 <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
 
 
-<script>
-    function showMailingPopUp() {
-    require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us11.list-manage.com","uuid":"8784341695ceff57ad91bf3ea","lid":"17dffc2be854bf01fcd5a4aa6"}) })
-    document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
-};
-
-document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
-
-</script>
 </head>
 <body>
 	<!-- header -->
@@ -272,5 +263,15 @@ document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<script>
+    function showMailingPopUp() {
+    require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us11.list-manage.com","uuid":"8784341695ceff57ad91bf3ea","lid":"17dffc2be854bf01fcd5a4aa6"}) })
+    document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+};
+
+document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
+
+</script>
 </body>
 </html>
