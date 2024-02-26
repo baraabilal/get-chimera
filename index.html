@@ -57,38 +57,38 @@
 						<p>Imagine a world where your data speaks your language. Connect your data sources to Chimera, and meet your best employee. Ask any question, get insights as if from a seasoned expert. </p></br>
 						<div class="hero_buttons">
    
-
-                            <!-- INPUT BOX -->
-
 <!-- INPUT BOX -->
 <div id="mc_embed_shell">
     <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
     <style type="text/css">
-        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block. */
         #mc_embed_signup {
-            font-family: Source Code Pro;
+            font-family: 'Source Code Pro', monospace;
             max-width: 600px;
             margin: 0 auto;
+            display: flex; /* Ensure the form is a flex container to align children */
+            justify-content: center; /* Center the form contents */
+            flex-wrap: wrap; /* Allow items to wrap if not enough space */
         }
 
         .mc-field-group {
-            margin-bottom: 20px;
             display: flex;
             align-items: center;
-            flex-direction: row; /* Ensure elements are laid out in a row */
+            flex-direction: row;
+            flex-wrap: wrap; /* Allow elements to wrap if there's not enough space */
+            width: 100%; /* Ensure the field group takes the full width of its container */
         }
 
         .mc-field-group input[type="email"] {
-            flex: 1; /* Let the input field take up remaining space */
+            flex-grow: 1; /* Let the input field grow to fill available space */
+            min-width: 200px; /* Set a minimum width for the input box */
             padding: 10px;
             border: 1px solid #ffffff;
             border-radius: 4px;
             font-size: 16px;
-            color: white;
-            background-color: rgba(255, 255, 255, 0.3);
-            margin-right: 10px;
-            width: calc(100% - 140px); /* Adjust width to leave space for button */
+            background-color: rgba(255, 255, 255, 0.3); /* Keeping original background color */
+            margin-right: 10px; /* Ensure some space between the input and the button */
+            color: white; /* Keeping original text color */
         }
 
         .mc-field-group input[type="email"]::placeholder {
@@ -97,23 +97,20 @@
         }
 
         #mc-embedded-subscribe {
-            text-decoration: none;
-            background: #FFFFFF;
-            font-family: Source Code Pro;
-            font-size: 12px;
-            font-weight: 600;
-            letter-spacing: 0.035em;
-            border-radius: 10px !important;
-            color: #000000 !important;
-            padding: 12px 22px !important; /* Removed unnecessary padding on the right and left */
-            display: inline-block !important;
-            margin: 0px 10px !important;
-            border: 1px solid #FFFFFF !important;
+            flex-basis: 100%; /* Start with full width to double the size of the button */
+            max-width: 200%; /* Allow the button to grow up to double its size */
+            padding: 12px 22px; /* Adjusted padding for better alignment */
+            background: #FFFFFF; /* Keeping original button background color */
+            color: #000000; /* Keeping original button text color */
+            border-radius: 10px !important; /* Keeping original border radius */
+            border: 1px solid #FFFFFF !important; /* Keeping original border color */
+            cursor: pointer; /* Cursor pointer to indicate button */
             transition: background-color 0.3s ease;
+            margin-top: 10px; /* Add some space between the input and the button when wrapped */
         }
 
         #mc-embedded-subscribe:hover {
-            background: transparent;
+            background: transparent; /* Keeping original hover effect */
             color: #fff;
         }
 
@@ -123,24 +120,16 @@
         }
     </style>
     <div id="mc_embed_signup">
-        <form action="https://get-chimera.us10.list-manage.com/subscribe/post?u=8784341695ceff57ad91bf3ea&amp;id=165fdf2cb8&amp;f_id=006fdee5f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+        <form action="https://get-chimera.us10.list-manage.com/subscribe/post?u=8784341695ceff57ad91bf3ea&amp;id=165fdf2cb8&amp;f_id=006fdee5f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" style="width: 100%; display: flex; justify-content: center;">
             <div class="mc-field-group">
                 <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" placeholder="Email Address">
-                <input type="submit" name="subscribe" id="mc-embedded-subscribe"  value="JOIN WAITING LIST">
-            </div>
-            <div id="mce-responses" class="clear foot">
-                <div class="response" id="mce-error-response" style="display: none;"></div>
-                <div class="response" id="mce-success-response" style="display: none;"></div>
-            </div>
-            <div aria-hidden="true">
-                <input type="text" name="b_8784341695ceff57ad91bf3ea_165fdf2cb8" tabindex="-1" value="">
+                <input type="submit" value="JOIN WAITING LIST" name="subscribe" id="mc-embedded-subscribe" class="button">
             </div>
         </form>
     </div>
 </div>
 <!-- END OF INPUT BOX -->
 
-                            <!-- END OF INPUT BOX -->
 
 
 
