@@ -67,20 +67,6 @@ body{
 	border:1px solid #FFFFFF;
 }
 
-.hero_buttons button{
-	text-decoration: none;
-	background: #FFFFFF;
-	font-family: Source Code Pro;
-	font-size: 12px;
-	font-weight: 600;
-	letter-spacing: 0.035em;
-	border-radius: 10px;
-	color: #000000;
-	padding: 12px 22px 12px 22px;
-	display: inline-block;
-	margin: 0px 10px;
-	border:1px solid #FFFFFF;
-}
 
 .heading_box h1{
 	font-family: Sora;
