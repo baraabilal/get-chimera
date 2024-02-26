@@ -26,20 +26,17 @@
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
-<script>
-	// Function to load Mailchimp script
-	function loadMailchimpScript() {
-		// Create a script element
-		var script = document.createElement("script");
-		
-		// Set attributes for the Mailchimp script
-		script.id = "mcjs";
-		script.src = "https://chimpstatic.com/mcjs-connected/js/users/8784341695ceff57ad91bf3ea/17dffc2be854bf01fcd5a4aa6.js";
-		script.async = true;
+<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
 
-		// Insert the script into the head of the document
-		document.head.appendChild(script);
-	}
+
+<script>
+    function showMailingPopUp() {
+    require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us11.list-manage.com","uuid":"8784341695ceff57ad91bf3ea","lid":"17dffc2be854bf01fcd5a4aa6"}) })
+    document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+};
+
+document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
+
 </script>
 </head>
 <body>
@@ -50,7 +47,7 @@
 				<div class="col-md-12">
 					<div class="header_content d-flex justify-content-between align-items-center">
 						<a href="#"><img src="assets/images/logoo.svg" width="120px"></a>
-						<a href="#" class="header_btn" onclick="loadMailchimpScript()">join the waiting list</a>
+						<a href="#" class="header_btn" id="open-popup">join the waiting list</a>
 					</div>
 				</div>
 			</div>
@@ -207,7 +204,7 @@
 										<h3>Be part of the future of business intelligence</h3>
 										<img src="assets/images/line.svg">
 										<p class="mt-3">Unlock 10x productivity with Chimera</p>
-										<a href="#" onclick="loadMailchimpScript()">join the waiting list</a>
+										<a href="#" id="open-popup">join the waiting list</a>
 									</div>
 								</div>
 							</div>
